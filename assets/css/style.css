@@ -1,0 +1,45 @@
+/*
+DESENVOLVIDO POR: Thales A. Cardoso
+DATA: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    color: black;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/*******************************
+    ESTILO DO TOPO
+*******************************/
