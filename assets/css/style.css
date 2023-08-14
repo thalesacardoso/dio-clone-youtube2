@@ -12,11 +12,15 @@ DATA:
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
 html {
     font-size: 16px;
     color: black;
+}
+
+body {
     background-color: #f9f9f9;
 }
 
@@ -39,7 +43,90 @@ button {
     cursor: pointer;
 }
 
+.content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 56px 1fr ;
+    background-color: blue;
+}
 
 /*******************************
     ESTILO DO TOPO
 *******************************/
+header {
+    background-color: white;
+    height: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .menu {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 0 25px;
+}
+
+header .menu img {
+    cursor: pointer;
+}
+
+header .pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+header .pesquisa input {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+} 
+
+header .pesquisa input::placeholder {
+    color: #cdcdcd;
+} 
+
+header .pesquisa button {
+    width: 57px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+header .login {
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    gap: 25px;
+    align-items: center;
+    justify-content: end;
+    padding: 0 25px;
+}
+
+header .login img {
+    height: 24px;
+    cursor: pointer;
+}
+
+/*******************************
+    ESTILO DO MAIN
+*******************************/
+ main {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+ }
+
+ main nav {
+    background-color: green;
+    padding: 24px;
+ }
+
+ main section {
+    background-color: pink;
+ }
+
+
