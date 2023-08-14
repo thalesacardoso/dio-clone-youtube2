@@ -1,6 +1,6 @@
 /*
 DESENVOLVIDO POR: Thales A. Cardoso
-DATA: 
+DATA: 14/08/2023
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -20,10 +20,6 @@ html {
     color: black;
 }
 
-body {
-    background-color: #f9f9f9;
-}
-
 h1 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -32,11 +28,13 @@ h1 {
 h2 {
     font-size: 0.875rem;
     font-weight: 600;
+    color: #000;
 }
 
 p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 400;
+    color: #515151;
 }
 
 button {
@@ -44,15 +42,13 @@ button {
 }
 
 .content {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 56px 1fr ;
-    background-color: blue;
+    grid-template-rows: 56px 1fr;
 }
 
 /*******************************
-    ESTILO DO TOPO
+    ESTILO DO HEADER
 *******************************/
 header {
     background-color: white;
@@ -112,10 +108,9 @@ header .login img {
 }
 
 /*******************************
-    ESTILO DO MAIN
+    ESTILO DO MAIN + SECTION
 *******************************/
  main {
-    background-color: red;
     display: grid;
     grid-template-columns: 220px 1fr;
  }
@@ -125,11 +120,8 @@ header .login img {
     padding: 24px;
  }
 
- main nav ul {
- }
-
  main nav ul li {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -140,15 +132,34 @@ header .login img {
     margin-right: 16px;
  }
 
-
-
-
-
+/***********  SEÇÃO PRINCIPAL  ***********/
 
  main section {
-    background-color: pink;
+    background-color: #f9f9f9;
     padding: 24px 28px;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+    grid-template-rows: repeat(auto-fit, 265px);
+    gap: 14px;
  }
 
+ main section div.video {
+    padding: 16px;
+ }
 
+ main section div.video figure img {
+    width: 100%;
+    margin-bottom: 16px;
+    cursor: pointer;
+ }
+
+ main section div.textos-video {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+ }
+
+ main section div.textos-video h2 {
+    margin-bottom: 10px;
+ }
